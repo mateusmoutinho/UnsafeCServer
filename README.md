@@ -5,9 +5,13 @@ clone these repo, and run
 ```shel
 sh build.sh
 ```
-then run:
+then run the multprocess version with:
 ```shel
-./server.o MASTER_KEY "congratulation you have hacked the server" 3000
+./server_multiprocess.o MASTER_KEY "congratulation you have hacked the server" 3000
+```
+or run the single process version  with:
+```shel
+./server_single_process.o MASTER_KEY "congratulation you have hacked the server" 3000
 ```
 
 where argv[1] = 'your key'
