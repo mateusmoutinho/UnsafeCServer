@@ -8,11 +8,11 @@ CwebHttpResponse *main_sever(CwebHttpRequest *request ){
     if(user_password == NULL){
         return cweb.response.send_text("you did not passed the password",404);
     }
-    char unsafe_buffer[20] = {0};
+    char unsafe_buffer[30] = {0};
     sprintf(unsafe_buffer,"%s",user_password);
     bool passwords_are_equal = strcmp(unsafe_buffer, master_key)  == 0;
     if(passwords_are_equal){
-        return cweb.response.send_file("secret.txt",CWEB_AUTO_SET_CONTENT,200);
+        return cweb.response.send_file("secret.html",CWEB_AUTO_SET_CONTENT,200);
     }
 
     return cweb.response.send_text("acess denied", 200);
