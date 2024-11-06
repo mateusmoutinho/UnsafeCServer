@@ -20,7 +20,7 @@ where argv[1] = 'your key'<br>
 argv[2] = your port <br>
 ## How it works
 The attacker gets suscess if capture the secret message (which means it get informations of the victim)
-the secret menssage its the file **secret.txt**
+the secret menssage its the file **secret.html**
 ### CWebStudio Protection
 if you run the server with **server_single_process.o** and pass a buffer higher than 20 chars
 if you will crash the servr, but if you run **server_multiprocess.o** the CWebStudio Protection system
