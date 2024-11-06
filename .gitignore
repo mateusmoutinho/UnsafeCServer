@@ -1,6 +1,6 @@
 # Prerequisites
 *.d
-
+CWebStudio.h
 # Object files
 *.o
 *.ko
