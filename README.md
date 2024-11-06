@@ -19,3 +19,8 @@ argv[2] = your port
 ## How it works
 The attacker gets suscess if capture the secret message (which means it get informations of the victim)
 the secret menssage its the file **secret.txt**
+### CWebStudio Protection
+if you run the server with **server_single_process.o** and pass a buffer higher than 20 chars
+if you will crash the servr, but if you run **server_multiprocess.o** the CWebStudio Protection system
+will kill the runing process and return a 500 page, in other worlds it means you will have a couple miliseconds
+to bypass the passworld
