@@ -43,7 +43,10 @@ int main(int argc, char *argv[]){
     CwebServer server = newCwebSever(port, main_sever);
     #ifdef SINGLE_PROCESS
         server.single_process = true;
+
     #endif
+    server.max_queue = 10;
+    server.max_requests = 10;
     cweb.server.start(&server);
     return 0;
 }
