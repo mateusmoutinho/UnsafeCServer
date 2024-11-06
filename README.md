@@ -18,8 +18,6 @@ or run the single process version  with:
 
 where argv[1] = 'your key'<br>
 argv[2] = your port <br>
-## Hack 
-the server its running on: http://15.228.244.245/
 ## How it works
 The attacker gets suscess if capture the secret message (which means it get informations of the victim)
 the secret menssage its the file **secret.txt**
